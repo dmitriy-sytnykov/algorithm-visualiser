@@ -1,0 +1,77 @@
+.algorithm-info {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .info-box {
+    flex: 1;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .info-header {
+    padding: 10px 15px;
+    background-color: #e9ecef;
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .info-content {
+    padding: 15px;
+  }
+  
+  .stat-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .stat-label {
+    font-weight: 500;
+    color: #555;
+  }
+  
+  .stat-value {
+    font-weight: bold;
+  }
+  
+  .current-step {
+    flex: 2;
+  }
+  
+  .step-description {
+    font-size: 16px;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .progress-indicator {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .spinner {
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(0, 123, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: #007bff;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .algorithm-info {
+      flex-direction: column;
+    }
+  }

@@ -1,0 +1,77 @@
+.algorithm-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    align-items: center;
+  }
+  
+  .control-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .control-group label {
+    font-weight: bold;
+    min-width: 100px;
+  }
+  
+  .control-group select,
+  .control-group input {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .value-display {
+    min-width: 40px;
+    text-align: center;
+  }
+  
+  .start-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .start-button:hover:not(:disabled) {
+    background-color: #45a049;
+  }
+  
+  .start-button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  .connection-status {
+    margin-left: auto;
+    font-weight: bold;
+  }
+  
+  .connected {
+    color: #4CAF50;
+  }
+  
+  .disconnected {
+    color: #f44336;
+  }
+  
+  @media (max-width: 768px) {
+    .algorithm-controls {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .connection-status {
+      margin-left: 0;
+      margin-top: 10px;
+    }
+  }

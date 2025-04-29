@@ -1,0 +1,4 @@
+package com.dsytnykov.websocket.algorithm.sort;
+
+public class Bubble {
+}

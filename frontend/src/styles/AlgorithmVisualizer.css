@@ -1,0 +1,24 @@
+.algorithm-visualizer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .visualization-container {
+    width: 100%;
+    min-height: 400px;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .connection-warning {
+    padding: 10px;
+    background-color: #ffdddd;
+    border-left: 6px solid #f44336;
+    margin: 20px 0;
+    color: #721c24;
+    border-radius: 4px;
+  }
